@@ -1,0 +1,26 @@
+{
+  "name": "AI Search Killer",
+  "description": "Removes AI Search result elements",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "worker.js"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
+  },
+  "permissions": [
+    "activeTab",
+    "offscreen",
+    "scripting",
+    "tabs",
+    "webNavigation"
+  ],
+  "host_permissions": [ "<all_urls>" ],
+  "action": {
+    "default_title": "Click to open panel",
+    "default_icon": {
+      "128": "images/NoAI.png"
+    }
+  }
+}
