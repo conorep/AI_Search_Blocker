@@ -6,14 +6,20 @@
   "background": {
     "service_worker": "worker.js"
   },
+  "content_scripts": [{
+    "matches": [ "https://www.google.com/*" ],
+    "match_about_blank": false,
+    "run_at": "document_start",
+    "js": [
+      "content/removeGoogleAISearch.js"
+    ]
+  }],
   "content_security_policy": {
     "extension_pages": "script-src 'self'; object-src 'self';"
   },
   "permissions": [
-    "activeTab",
     "offscreen",
     "scripting",
-    "tabs",
     "webNavigation"
   ],
   "host_permissions": [ "<all_urls>" ],
