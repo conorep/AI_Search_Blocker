@@ -18,9 +18,16 @@
   ],
   "host_permissions": [ "<all_urls>" ],
   "action": {
-    "default_title": "Click to open panel",
+    "default_title": "No click necessary!",
     "default_icon": {
-      "128": "images/NoAI.png"
+      "32": "images/NO_AI_32.png",
+      "64": "images/NO_AI_64.png",
+      "128": "images/NO_AI_128.png"
     }
+  },
+  "icons": {
+    "32": "images/NO_AI_32.png",
+    "64": "images/NO_AI_64.png",
+    "128": "images/NO_AI_128.png"
   }
 }
